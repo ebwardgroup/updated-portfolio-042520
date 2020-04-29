@@ -1,0 +1,381 @@
+zz
+
+/* Teal color (used for headings and backgrounds): `#4aaaa5`
+   * Regular font color (used for paragraphs and all text besides the headings): `#777777`
+   * Main header background color: `#ffffff`
+   * Main header border color: `#cccccc`
+   * Footer background color: `#666666`
+   * Main content background color: `#ffffff`
+   * Main content border color: `#dddddd`
+
+   * For heading fonts use `font-family: 'Georgia', Times, Times New Roman, serif;`.
+   * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`.
+   */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    
+}
+
+.welcome-container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    text-align: justify;
+    
+  }
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+nav {
+    background-color: #ffffff;
+    height: 10%;
+
+}
+
+.header {
+    width: 80%;
+    /* /960px// */
+    height: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.name {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 20%;
+    height: 100%; 
+    text-align: center;
+    font-size: normal; 
+    display: inline-block;
+    position: relative;
+}
+
+.name h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    vertical-align: center;
+}
+
+.links {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: normal;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    /* top: calc(50%); */
+    height: 100%;
+    background-color: #4aaaa5;
+    color: white;
+    vertical-align: center;
+}
+
+.links ul {
+    background-color: #4aaaa5;
+    color: white;
+    vertical-align: center;
+    
+}
+
+.links li {
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    vertical-align: center;
+    
+}
+
+main {
+    height: 80%;
+    background-color: rgb(211, 211, 211);
+    position: relative;
+    background-image: "https://imgur.com/HHn1goY"
+
+}
+
+.about-me-container, .contact-me-container {
+    width: 80%;
+    /* /960px// */
+    height: 70%;
+    top: 50px;
+    right: calc(50% - 480px);
+    background-color: white;
+    position: absolute;
+    
+}
+/* 
+    .crystal-container {
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+} */
+
+.holiday-container, .bamazon-container, 
+.liriBot-container, .friendFinder-container,
+.sportsCenter-container, .crystal-container {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-me-header, #contact-me-header {
+    background-color: #ffffff;
+    height: 10%;
+    
+}
+
+.title-container {
+    font-family: fantasy;
+    font-size: large;
+}
+
+.captionCrystal, .captionHoliday,
+.captionBamazon, .captionLiriBot,
+.captionFriendFinder, .captionSportsCenter {
+    text-align: center;
+    font-family: fantasy;
+    font-size: x-large;
+}
+
+.about-me, #contact-me {
+    color: #4aaaa5;
+    vertical-align: 50%;
+}
+
+.about-me-text-box, #contact-me-text-box {
+    background-color:  lightblue;
+    height: 90%;
+    position: relative;
+    border: 1px solid #dddddd;   
+}
+
+img {
+    display: inline-block;
+    /* position: absolute; */
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+  }
+
+
+.about-me-content {
+    color: #777777;
+    display: inline-block;
+    /* position: absolute; */
+    /* width: 820px; */
+    width: 80%;
+    right: 10px;
+    
+}
+
+
+footer {
+    background-color:#666666;
+    height: 10%;
+    text-align: center;
+    color: white;
+    font-size: normal;
+
+}
+
+* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea, .name, .email, .message {
+  width: 80%;
+  /* width: 960px; */
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;  
+}
+
+.your-name {
+    width: 80%;
+    /* width: 960px; */
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  max-width: 80%;
+  /* width: 960px; */
+  font-size: large;
+}
+
+
+.message {
+  border-radius: 5px;
+  background-color: red;
+  padding: 20px;
+  max-width: 80%;
+  /* max-width: 960px; */
+}
+
+.map {
+    padding: 3px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 640px) {
+     #contact-me-header, 
+    .contact-me-container, 
+    .map-container, .map,
+    body, .footer, {
+      width: 100%;
+      float: center;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+
+    @media screen and (max-width: 640px) {
+        .header, .name, .about-me-text-box,
+        .about-me-container, .about-me-header,
+        .about-me-content, main, body, nav, .name h1, 
+         {
+        position: static;
+        text-align: center;
+        width: 100%;    
+        float: left; 
+        margin: 0;
+        padding: 5px;
+        border: 1px; 
+        /* display: flex; */
+        justify-content: center;
+        flex: 100%;
+        max-width: 100%;
+
+    }
+
+    @media screen and (max-width: 640px) {
+        .links, .links ul, .links li {
+        
+        text-align: center;
+        float: center;
+        width: 100%;
+        z-index: 1000;
+        
+        
+    }
+
+    
+
+  }
+
+  @media screen and (max-width: 768px) {
+    #contact-me-header, 
+   .contact-me-container, 
+   .map-container, .map
+   body, .footer, {
+     width: 100%;
+     float: center;
+       text-align: left;
+       display: flex;
+       flex-wrap: wrap;
+     
+   }
+
+   @media screen and (max-width: 768px) {
+       .header, .name, img, .about-me-text-box,
+       .about-me-container, .about-me-header,
+       .about-me-content,
+        {
+       position: static;
+      text-align: center;
+       width: 100%;    
+       float: left; 
+       /* margin: 10px 4px; */
+       /* display: flex; */
+       justify-content: center;
+       flex: 100%;
+       max-width: 100%;
+       
+
+   }
+
+   @media screen and (max-width: 768px) {
+       .links, .links ul, .links li {
+       position: static;
+       text-align: center;
+       float: center;
+       width: 100%;
+       
+       
+   }
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    #contact-me-header, 
+   .contact-me-container, 
+   .map-container, .map,
+   body, .footer, {
+     width: 100%;
+     float: center;
+       text-align: left;
+       display: flex;
+       flex-wrap: wrap;
+       position: relative;
+     
+   }
+
+   @media screen and (max-width: 980px) {
+       .header, .name, img, .about-me-text-box,
+       .about-me-container, .about-me-header,
+       .about-me-content,
+        {
+       position: static;
+      text-align: center;
+       width: 100%;    
+       float: left; 
+       margin: 0,auto;
+       /* display: flex; */
+       justify-content: center;
+       flex: 100%;
+       max-width: 100%;
+       
+
+   }
+
+   @media screen and (max-width: 980px) {
+       .links, .links ul, .links li {
+       position: static;
+       text-align: center;
+       float: center;
+       width: 100%;
+       
+       
+   }
